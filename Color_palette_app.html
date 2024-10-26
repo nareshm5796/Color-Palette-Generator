@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--importingGoogle fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="Light">
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h2>Color Palette Generator</h2>
+            <button id="theme-toggle" onclick="toggleTheme()"> Light / Dark </button>
+        </div>
+    </header>
+    <!-- Main Container -->
+    <div class="container">
+        <div class="left-container">
+            <div class="info">
+                <h1>
+                    <!-- Wrap each character in a span -->
+                    <span>A</span><span>r</span><span>e</span>
+                    <span> </span><span>Y</span><span>o</span><span>u</span>
+                    <span> </span><span>S</span><span>t</span><span>r</span><span>u</span><span>g</span><span>g</span><span>l</span><span>i</span><span>n</span><span>g</span>
+                    <span> </span><span>w</span><span>i</span><span>t</span><span>h</span>
+                    <span> </span><span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>s</span><span>?</span>
+                </h1> 
+             <h2>Here we are to help you...</h2>
+             <h3>You Can Choose a Color and Generate</h3>
+             </div>
+             <div class="info-img">
+                <img src="pic2.png" alt="imgage-palette">
+             </div>  
+        </div>
+        <div class="right-container">
+                <div class="choose-color">
+                         <div class="choose-color-left">
+                                <label for="colorInput" class="sr-only"><h2> Search for a Color</h2></label>
+                                <div class="color-picker-container">
+                                    <input type="text" id="colorNameInput" placeholder="Enter color name" oninput="updateColorInput(this.value)">
+                                    <input type="color" id="colorInput" value="#cf2cc1" onchange="updateColorNameInput(this.value)">        
+                                </div>
+                                <div class="generatePalette">
+                                        <button  onclick="generatePalette()">Generate</button>
+                                 </div>
+                         </div>
+                </div>
+
+                <div class="palette" id="palette"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Color Generator. Created by Ekalasaala.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
