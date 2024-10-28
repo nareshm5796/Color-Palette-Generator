@@ -355,11 +355,21 @@
     @media (max-width: 768px) {
 
         /* General adjustments for mobile */
-        body {
+        /* body {
             display: block;
             justify-content: flex-start;
-            height: auto;
-        }
+            height: 100vh;
+        } */
+
+        /* body Styles */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    
     
         .header-content {
             /* flex-direction: column; */
