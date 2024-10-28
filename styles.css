@@ -366,8 +366,8 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            height: 100vh;
+            justify-content: space-between;
+            height: 95vh;
         }
     
     
