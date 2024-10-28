@@ -390,17 +390,34 @@
         }
     
         .info h1 {
-            font-size: 1.4em;
+            font-size: 1.2em;
             letter-spacing: 0.8px;
         }
     
         .info h2 {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-top: 4px;
         }
     
         .info h3 {
-            font-size: 1em;
+            font-size: 0.9em;
+        }
+
+        .sr-only h2{
+            /* margin: 5px; */
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+        .info-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .info-img img{
+            width: 75%;
+            height: 70%;
+            padding: 10px;
         }
     
         /* Right container adjustments */
